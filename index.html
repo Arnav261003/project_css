@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Arnav</a>
+        <ul>
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars" alt="Stars yaha hai">
+        <img src="moon.png" id="moon" alt="Moon yaha hai">
+        <img src="mountains_behind.png" id="mountains_behind" alt="Peeche wale mountain yaha hai">
+        <h2 id="text">Namaste</h2>
+        <a href="#sec" id="btn">Know more about me 👇</a>
+        <img src="mountains_front.png" id="mountains_front" alt="Aage wale mountain yaha hai">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur architecto unde quod deleniti, iste praesentium aut, natus, corporis libero totam incidunt ex velit minus cum commodi consectetur! Iste, nulla id temporibus at excepturi reiciendis repudiandae? Nemo ipsum, deserunt et similique assumenda ullam fugit veritatis nam consequuntur eum a fuga temporibus veniam libero non earum officiis impedit cupiditate, quas saepe architecto modi. <br>Temporibus, possimus eveniet quisquam ducimus neque numquam illo? Sequi adipisci placeat unde enim quibusdam perspiciatis recusandae dolor officia maxime ab? Voluptates eaque aperiam ipsa aut odio dolorum dolore. Animi voluptates suscipit earum fuga quae? Ab quidem quasi mollitia possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolore quam deleniti tenetur ratione dolorem delectus illum error nam natus. Commodi non tempore vel perferendis  officia earum. Rem, ratione culpa! Vel odit minima soluta labore similique non laudantium, fuga maiores laboriosam porro, quas ad, sequi blanditiis nihil autem nisi repellat unde doloribus explicabo ab consectetur exercitationem enim quisquam? Hic error doloribus officiis aperiam, facilis omnis non necessitatibus est obcaecati, voluptate minus iste quasi repudiandae officia? Similique explicabo alias rem. Nostrum nihil a, ex consequatur quaebr  harum repudiandae. Cumque, unde cum, laborum nostrum ex, harum officiis soluta ullam in autem laboriosam aspernatur necessitatibus est sit neque. Repudiandae provident dolore nostrum distinctio sunt? Dolores magnam animi id, labore eius molestias sequi obcaecati possimus vitae adipisci ipsam quibusdam impedit veritatis nam atque placeat nihil? Obcaecati eveniet omnis magni provident eum, facere necessitatibus magnam expedita est. <br> Corporis odio inventore placeat sequi tenetur quas recusandae culpa, libero dignissimos, dolores molestias quibusdam in pariatur optio mollitia numquam maiores sed ipsum. Ducimus eius a cumque explicabo, architecto numquam recusandae ea aliquid obcaecati iusto! Repellat, labore, quia obcaecati est qui quod doloribus, sunt alias quibusdam ipsum inventore dolorum? Nihil cum perferendis recusandae veritatis suscipit mollitia sed quo explicabo.</p>
+
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.05 + 'px';
+            mountains_behind.style.top = value*0.5 + 'px';
+            mountains_front.style.top = value*0 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.5 + 'px';
+            btn.style.marginTop = value*1.5 + 'px';
+            header.style.top = value*0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
